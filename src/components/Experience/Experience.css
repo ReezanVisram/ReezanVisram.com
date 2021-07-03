@@ -1,0 +1,19 @@
+.experience-container {
+    text-align: center;
+}
+
+.experience-header-container {
+    border-bottom: 1px solid #03DAC6;
+}
+
+.experience-header {
+    color: #03DAC6;
+    font-size: 2rem;
+}
+
+.experience-content-container {
+    display: flex;
+    color: #03DAC6;
+    justify-content: space-around;
+    align-items: center;
+}
