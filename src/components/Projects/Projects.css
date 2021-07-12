@@ -1,0 +1,12 @@
+.other-projects-content-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media (max-width: 720px) {
+    .other-projects-content-container {
+        grid-template-columns: auto;
+    }
+}

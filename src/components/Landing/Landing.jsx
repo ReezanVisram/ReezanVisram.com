@@ -1,6 +1,6 @@
 import React from 'react';
 import './Landing.css';
-import Me from '../../images/Me.png';
+import Me from '../../images/Me.jpg';
 
 export default function Landing() {
     return (

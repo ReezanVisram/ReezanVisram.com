@@ -1,5 +1,6 @@
 .experience-container {
     text-align: center;
+    height: 50vh;
 }
 
 .experience-header-container {
@@ -13,7 +14,135 @@
 
 .experience-content-container {
     display: flex;
+    color: #EEEEEE;
+}
+
+.job-button-container {
+    margin-top: 2.5vh;
+    width: 40%;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.job-button {
+    padding: 10%;
+    width: 100%;
+    background: none;
+    text-align: left;
+    border: none;
+    outline: none;
+    color: #EEEEEE;
+    font-size: 1.5rem;
+    border-left: 3px solid #EEEEEE;
+}
+
+.job-button:hover {
+    background-color: #212121;
+    cursor: pointer;
+}
+
+.active {
+    border-left: 3px solid #03DAC6;
+}
+
+.active-job-information {
+    width: 80%;
+    opacity: 0;
+    animation: active-job-fade 0.75s forwards;
+    background-color: #212121;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-bottom: 2.5%;
+    border-radius: 10px;
+    margin: 2%;
+}
+
+.active-job-heading {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    height: 7.5vh;
     color: #03DAC6;
-    justify-content: space-around;
-    align-items: center;
+}
+
+.active-job-heading h4 {
+    font-size: 1.5rem;
+}
+
+.active-job-heading p {
+    color: #AAAAAA;
+    font-size: 1.25rem;
+}
+
+.active-job-description {
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+h5 {
+    color: #AAAAAA;
+    font-size: 1.1rem;
+}
+
+@keyframes active-job-fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 720px) {
+    .experience-container {
+        height: 125vh;
+    }
+
+    .experience-content-container {
+        flex-direction: column;
+        align-items: center;
+        height: 95%;
+    }
+
+    .job-button-container {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        padding: 0;
+        margin-left: 0;
+    }
+
+    .job-button {
+        border-left: none;
+        border-bottom: 3px solid #FFFFFF;
+        text-align: center;
+    }
+
+    .active {
+        border-bottom: 3px solid #03DAC6;
+    }
+
+    .active-job-information {
+        width: 90vw;
+        height: 100%;
+    }
+
+    .active-job-points-list {
+        list-style: none;
+    }
+
+    .active-job-heading {
+        text-align: center;
+        height: 15vh;
+        width: 100%;
+    }
+
+    .active-job-description {
+        text-align: center;
+        height: 60vh;
+    }
 }

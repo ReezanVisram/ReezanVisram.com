@@ -1,0 +1,10 @@
+.section-heading-container {
+    border-bottom: 1px solid #03DAC6;
+    text-align: center;
+    margin-top: 2.5vh;
+}
+
+.section-heading {
+    color: #03DAC6;
+    font-size: 2rem;
+}

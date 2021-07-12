@@ -1,0 +1,15 @@
+.footer-container {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #03DAC6;
+    margin-top: 2.5vh;
+}
+
+.footer-container h3 {
+    color: #03DAC6;
+    font-size: 2rem;
+}
+
+.footer-icon-container a {
+    color: #EEEEEE;
+}
