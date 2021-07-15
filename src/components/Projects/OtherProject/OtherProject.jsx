@@ -9,7 +9,20 @@ export default function OtherProject({ project }) {
     return (
         <div className={'other-project-container'}>
             <div className={'other-project-content-container'}>
-                <h4 className={'other-project-title'}>{project.name}</h4>
+
+                {project.type === 'download' &&
+                    <a className={'other-project-title-link'} href={project.releaseLink} download>
+                        <h4 className={'other-project-title'}>{project.name}</h4>
+                    </a>
+                }
+
+                {project.type === 'web' &&
+                    <a className={'other-project-title-link'} href={project.releaseLink} target="_blank" rel="noreferrer">
+                        <h4 className={'other-project-title'}>{project.name}</h4>
+                    </a>
+                }
+
+                
                 <div className={'other-project-detail-container'}>
                     <p className={'other-project-summary'}>{project.summary}</p>
 

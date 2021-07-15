@@ -34,6 +34,11 @@
     color: #AAAAAA;
 }
 
+.other-project-title-link {
+    text-decoration: none;
+    color: #03DAC6;
+}
+
 .icons a { 
     color: #AAAAAA;
 }

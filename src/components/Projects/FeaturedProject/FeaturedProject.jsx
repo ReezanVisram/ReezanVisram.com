@@ -9,7 +9,18 @@ export default function FeaturedProject({ project }) {
     return (
         <div className={'featured-project-container'}>
             <div className={'featured-project-main-container'}>
-                <h4>{project.name}</h4>
+                {project.type === 'download' &&
+                    <a className={'featured-project-title-link'} href={project.releaseLink} download>
+                        <h4>{project.name}</h4>
+                    </a>
+                }
+
+                {project.type === 'web' && 
+                    <a className={'featured-project-title-link'} href={project.releaseLink} target="_blank" rel="noreferrer">
+                        <h4>{project.name}</h4>
+                    </a>
+                }
+
                 {project.type === 'download' &&
                     <a className={'featured-project-image-link'} href={project.releaseLink} download><img className={'featured-project-img'} src={project.img} alt={project.name} /></a>
                 }
@@ -26,7 +37,7 @@ export default function FeaturedProject({ project }) {
                 <div className={'featured-project-icon-container'}>
                     <p className={'featured-project-technologies'}>{project.technologies.join(', ')}</p>
                     <div>
-                        <a href={project.githubLink}><GitHubIcon /></a>
+                        <a href={project.githubLink} target="_blank" rel="noreferrer"><GitHubIcon /></a>
 
                             {project.type === 'download' && 
                                 <a href={project.releaseLink} download><GetAppIcon className={'featured-project-release-icon'} /></a>

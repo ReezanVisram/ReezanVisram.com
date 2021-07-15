@@ -45,6 +45,11 @@
     justify-content: space-between;
 }
 
+.featured-project-title-link {
+    color: #03DAC6;
+    text-decoration: none;
+}
+
 .featured-project-technologies {
     color: #AAAAAA;
 }
