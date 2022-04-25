@@ -1,25 +1,26 @@
 name: Publish Website to CPanel
 on:
-  push:
-    branches:
-      - master
+    push:
+        branches:
+            - 'master'
 jobs:
-  FTP-Deploy-Action:
-    name: FTP-Deploy-Action
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2.1.0
-      with:
-        fetch-depth: 2
-    - name: Install and Build
-    run: |
-      npm ci
-      npm run build
-    - name: FTP-Deploy-Action
-      uses: SamKirkland/FTP-Deploy-Action@3.1.1
-      with:
-        local-dir: ./build/
-        server-dir: public_html
-        ftp-server: ${{ secrets.FTP_SERVER }}
-        ftp-username: ${{ secrets.FTP_USERNAME }}
-        ftp-password: ${{ secrets.FTP_PASSWORD }}
+    FTP-Deploy-Action:
+        name: Deploy
+        runs-on: ubuntu-latest
+        steps:
+            - name: Get latest code
+              uses: actions/checkout@v2
+
+            - name: Install and Build
+              run: |
+                  npm ci
+                  npm run build
+
+            - name: Deploy to CPanel
+              uses: SamKirkland/FTP-Deploy-Action@4.3.0
+              with:
+                  server: ${{ secrets.FTP_SERVER }}
+                  username: ${{ secrets.FTP_USERNAME }}
+                  password: ${{ secrets.FTP_PASSWORD }}
+                  local-dir: ./build/
+                  server_dir: public_html
