@@ -4,17 +4,17 @@
 }
 
 .experience-header-container {
-    border-bottom: 1px solid #03DAC6;
+    border-bottom: 1px solid #03dac6;
 }
 
 .experience-header {
-    color: #03DAC6;
+    color: #03dac6;
     font-size: 2rem;
 }
 
 .experience-content-container {
     display: flex;
-    color: #EEEEEE;
+    color: #eeeeee;
 }
 
 .job-button-container {
@@ -33,9 +33,9 @@
     text-align: left;
     border: none;
     outline: none;
-    color: #EEEEEE;
+    color: #eeeeee;
     font-size: 1.5rem;
-    border-left: 3px solid #EEEEEE;
+    border-left: 3px solid #eeeeee;
 }
 
 .job-button:hover {
@@ -44,7 +44,7 @@
 }
 
 .active {
-    border-left: 3px solid #03DAC6;
+    border-left: 3px solid #03dac6;
 }
 
 .active-job-information {
@@ -65,7 +65,7 @@
     flex-direction: column;
     text-align: left;
     width: 100%;
-    color: #03DAC6;
+    color: #03dac6;
 }
 
 .active-job-heading h4 {
@@ -73,18 +73,17 @@
 }
 
 .active-job-heading p {
-    color: #AAAAAA;
+    color: #aaaaaa;
     font-size: 1.25rem;
 }
 
 .active-job-description {
     text-align: left;
     font-size: 1.1rem;
-    
 }
 
 h5 {
-    color: #AAAAAA;
+    color: #aaaaaa;
     font-size: 1.1rem;
 }
 
@@ -112,6 +111,7 @@ h5 {
     .job-button-container {
         flex-direction: row;
         width: 100%;
+        overflow: scroll;
         justify-content: space-between;
         padding: 0;
         margin-left: 0;
@@ -119,12 +119,12 @@ h5 {
 
     .job-button {
         border-left: none;
-        border-bottom: 3px solid #FFFFFF;
+        border-bottom: 3px solid #ffffff;
         text-align: center;
     }
 
     .active {
-        border-bottom: 3px solid #03DAC6;
+        border-bottom: 3px solid #03dac6;
     }
 
     .active-job-information {
