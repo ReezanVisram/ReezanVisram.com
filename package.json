@@ -2,7 +2,6 @@
     "name": "reezanvisram",
     "version": "1.0.0",
     "private": true,
-    "homepage": "reezanvisram.com",
     "dependencies": {
         "@material-ui/core": "^4.12.0",
         "@material-ui/icons": "^4.11.2",
