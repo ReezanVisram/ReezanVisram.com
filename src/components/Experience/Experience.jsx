@@ -14,7 +14,7 @@ export default function Experience() {
             points: [
                 'Developed a full-stack application management system and multiple microservices using React, Express, TypeScript and PostgreSQL, used by over 10 companies',
                 'Wrote automated test suites to achieve 99% code coverage using Jest and React-Testing-Library',
-                'Containerized applications and microservices using Docker to deploy to AWS EC2 environments',
+                'Containerized applications and microservices using Docker and deployed to AWS EC2 environments',
                 'Worked in an Agile team framework, and participated in and led various ceremonies, including 2-week sprints, sprint review, sprint retrospective and daily stand-ups',
                 'Initiated and led discussions about improving workflow and increasing efficiency, leading to increased velocity and quality of deliverables',
             ],
@@ -23,6 +23,7 @@ export default function Experience() {
                 'PostgreSQL (TypeORM)',
                 'Docker',
                 'Jest',
+                'AWS EC2',
             ],
         },
         {
