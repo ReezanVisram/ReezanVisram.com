@@ -1,4 +1,4 @@
-![Personal Website Logo](https://github.com/ReezanVisram/ReezanVisram.com/blob/master/public/logo192.png)
+![Personal Website Logo](https://github.com/ReezanVisram/ReezanVisram.com/blob/master/public/favicon.ico)
 
 # ReezanVisram - My Personal Website
 
