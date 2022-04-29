@@ -27,7 +27,7 @@ export default function Projects() {
             summary:
                 'A hub for custom mechanical keyboard components. Data scraped daily from many major component retailers and compiled into one site.',
             githubLink: 'https://github.com/reezanvisram/TypeR',
-            releaseLink: 'https://github.com/reezanvisram/TypeR',
+            releaseLink: 'http://typer.reezanvisram.com',
         },
         {
             name: 'FractalVisualizer',
