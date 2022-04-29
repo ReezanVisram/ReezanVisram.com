@@ -11,6 +11,6 @@ My Personal Portfolio Website, showcasing my experience and my projects.
 ## Visit [reezanvisram.com](https://reezanvisram.com) to see the website.
 
 To run the site locally, clone the repo and run:
-`$ npm install`
-`$ npm run start`
+`$ npm install`  
+`$ npm run start`  
 And then navigate to `http://localhost:3000`!
