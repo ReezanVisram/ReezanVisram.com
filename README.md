@@ -1,4 +1,4 @@
-# ReezanVisram.com
+# ReezanVisram - My Personal Website
 
 My Personal Portfolio Website, showcasing my experience and my projects.
 
@@ -8,7 +8,7 @@ My Personal Portfolio Website, showcasing my experience and my projects.
     -   I chose React because it is my favourite frontend framework. Future versions will be built using _TypeScript_.
 -   MySQL
 
-## Visit reezanvisram.com to see the website.
+## Visit [reezanvisram.com](https://reezanvisram.com) to see the website.
 
 To run the site locally, clone the repo and run:
 `$ npm install`
