@@ -1,6 +1,7 @@
+![Personal Website Logo](https://github.com/ReezanVisram/ReezanVisram.com/blob/master/public/logo192.png)
+
 # ReezanVisram - My Personal Website
 
-![Personal Website Logo](https://github.com/ReezanVisram/ReezanVisram.com/blob/master/public/logo192.png)
 My Personal Portfolio Website, showcasing my experience and my projects.
 
 ## Technologies
