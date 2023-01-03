@@ -6,14 +6,25 @@ import FeaturedProject from './FeaturedProject/FeaturedProject';
 import OtherProject from './OtherProject/OtherProject';
 
 import NHLSimulation from '../../images/Projects/NHLSimulation.png';
-import ImproveMint from '../../images/Projects/ImproveMint.png';
-import PillsOnWheels from '../../images/Projects/PillsOnWheels.png';
 import TypeR from '../../images/Projects/TypeR.png';
 import FractalVisualizer from '../../images/Projects/FractalVisualizer.png';
 import MorseCodeTeachingDevice from '../../images/Projects/MorseCodeTeachingDevice.png';
+import Chess from '../../images/Projects/Chess.png'
 
 export default function Projects() {
     const featuredProjects = [
+        {
+            name: '3D Chess',
+            img: Chess,
+            type: 'download',
+            technologies: [
+                'C++',
+                'OpenGL',
+            ],
+            summary: 'A human-vs-human 3D chess game, intended to simulate playing over-the-board chess',
+            githubLink: 'https://github.com/reezanvisram/chess',
+            releaseLink: process.env.PUBLIC_URL + './Chess.zip'
+        },
         {
             name: 'TypeR',
             img: TypeR,
@@ -27,7 +38,7 @@ export default function Projects() {
             summary:
                 'A hub for custom mechanical keyboard components. Data scraped daily from many major component retailers and compiled into one site.',
             githubLink: 'https://github.com/reezanvisram/TypeR',
-            releaseLink: 'http://typer.reezanvisram.com',
+            releaseLink: 'https://typer.reezanvisram.com',
         },
         {
             name: 'FractalVisualizer',
@@ -65,9 +76,20 @@ export default function Projects() {
             githubLink: 'https://github.com/reezanvisram/NHLSimulation',
             releaseLink: process.env.PUBLIC_URL + '/NHLSimulation.zip',
         },
+    ];
+
+    const otherProjects = [
+        {
+            name: 'Pharmaceutica',
+            type: 'download',
+            technologies: ['C#', 'Unity Game Engine'],
+            summary:
+                'A tycoon game where a user takes control of a pharmaceutical company racing to develop a vaccine for COVID-19',
+            githubLink: 'https://github.com/reezanvisram/pharmaceutica',
+            releaseLink: process.env.PUBLIC_URL + '/Pharmaceutica.zip',
+        },
         {
             name: 'ImproveMint',
-            img: ImproveMint,
             type: 'web',
             technologies: [
                 'HTML',
@@ -83,7 +105,6 @@ export default function Projects() {
         },
         {
             name: 'PillsOnWheels',
-            img: PillsOnWheels,
             type: 'web',
             technologies: ['React Native', 'Python (Flask)', 'SQLite'],
             summary:
@@ -91,18 +112,6 @@ export default function Projects() {
             githubLink: 'https://github.com/reezanvisram/PillsOnWheels',
             releaseLink:
                 'https://play.google.com/store/apps/details?id=com.Visram_INC.PillsOnWheels',
-        },
-    ];
-
-    const otherProjects = [
-        {
-            name: 'Pharmaceutica',
-            type: 'download',
-            technologies: ['C#', 'Unity Game Engine'],
-            summary:
-                'A tycoon game where a user takes control of a pharmaceutical company racing to develop a vaccine for COVID-19',
-            githubLink: 'https://github.com/reezanvisram/pharmaceutica',
-            releaseLink: process.env.PUBLIC_URL + '/Pharmaceutica.zip',
         },
         {
             name: 'Complete Crisis Coverage',

@@ -8,6 +8,38 @@ export default function Experience() {
     const jobs = [
         {
             id: 0,
+            company: 'BlackBerry',
+            title: 'Software Developer Intern (Co-op)',
+            time: 'September 2022 - December 2022',
+            points: [
+                'Developed backend cloud microservices and AWS Lambda functions using Python and Go, as part of the Endpoint Detection and Response team',
+                'Created and implemented a new bulk GET API, increasing request bandwidth by over 50x',
+                'Optimized an EQL to SQL translator library, reducing query times by over 90% and improving stability',
+                'Demonstrated features in front of performance and testing teams, getting feedback and performance stats',
+                'Wrote Python scripts to delete bad records from microservice caches thereby reducing costs in multiple regions',
+                'Enhanced microservice and Lambda function logging to reduce noise and alert the team to issues earlier, leading to reduced cost and time savings',
+                'Implemented cache statistics logging, allowing the team to identify bottlenecks and areas of cost-savings',
+                'Deployed microservices to ephemeral, staging and production AWS environments using Jenkins',
+                'Wrote initial deployment smoke tests to ensure that microservices were configured properly before deployment, saving time and resources if build was misconfigured',
+                'Updated tickets in Jira daily with progress and status of issues that were assigned',
+                'Reviewed code written by team members in Bitbucket, and gave approval for pull requests to be merged, ensuring high code quality',
+            ],
+            technologies: [
+                'Python',
+                'Go',
+                'Docker',
+                'EQL',
+                'Redis',
+                'MySQL',
+                'AWS',
+                'Git',
+                'Jira',
+                'Bitbucket',
+                'Jenkins'
+            ],
+        },
+        {
+            id: 1,
             company: 'Red Thread Innovations',
             title: 'Software Engineering Intern (Co-op)',
             time: 'January 2022 - April 2022',
@@ -27,9 +59,9 @@ export default function Experience() {
             ],
         },
         {
-            id: 1,
+            id: 2,
             company: 'Hack the Northeast',
-            title: 'Frontend Developer',
+            title: 'Frontend Developer (Part-time)',
             time: 'August 2020 - June 2021',
             points: [
                 'Developed the frontend UI of the entire Hack the Northeast website (www.hackthenortheast.com) using React and Material UI',
@@ -45,18 +77,6 @@ export default function Experience() {
                 'GSAP.js',
                 'Git',
                 'Github',
-            ],
-        },
-
-        {
-            id: 2,
-            company: 'Dunbarton High School',
-            title: 'Math Tutor',
-            time: 'January 2018 - March 2020',
-            points: [
-                'Conducted one-on-one learning sessions for Mathematics',
-                'Evaluated student performance and provided academic counselling as needed',
-                'Selected as a “Peer Tutor” to aid struggling grade 9 students build the foundations necessary to succeed in Mathematics courses throughout high school and beyond',
             ],
         },
     ];

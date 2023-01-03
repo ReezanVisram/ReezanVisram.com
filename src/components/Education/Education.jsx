@@ -16,7 +16,7 @@ export default function Education() {
                         <h4 className={'awards-header'}>Awards</h4>
                         <ul className={'awards-list'}>
                             <li>University of Waterloo - President's Scholarship of Distinction Award - Awarded for an admission average of 99%</li>
-                            <li>University of Waterloo - Rachel and Elizabeth Madter Scholarship Award - Awarded to outstanding students entering Computer Engineering</li>
+                            <li>University of Waterloo - Richard and Elizabeth Madter Scholarship Award - Awarded to outstanding students entering Computer Engineering</li>
                         </ul>
                     </div>
                 </div>
