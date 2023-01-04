@@ -11,6 +11,7 @@ export default function Experience() {
             company: 'BlackBerry',
             title: 'Software Developer Intern (Co-op)',
             time: 'September 2022 - December 2022',
+            location: 'Waterloo, ON',
             points: [
                 'Developed backend cloud microservices and AWS Lambda functions using Python and Go, as part of the Endpoint Detection and Response team',
                 'Created and implemented a new bulk GET API, increasing request bandwidth by over 50x',
@@ -43,6 +44,7 @@ export default function Experience() {
             company: 'Red Thread Innovations',
             title: 'Software Engineering Intern (Co-op)',
             time: 'January 2022 - April 2022',
+            location: 'Toronto, ON',
             points: [
                 'Developed a full-stack application management system and multiple microservices using React, Express, TypeScript and PostgreSQL, used by over 10 companies',
                 'Wrote automated test suites to achieve 99% code coverage using Jest and React-Testing-Library',
@@ -61,8 +63,9 @@ export default function Experience() {
         {
             id: 2,
             company: 'Hack the Northeast',
-            title: 'Frontend Developer (Part-time)',
+            title: 'Frontend Developer (Remote & Part-time)',
             time: 'August 2020 - June 2021',
+            location: 'Toronto, ON',
             points: [
                 'Developed the frontend UI of the entire Hack the Northeast website (www.hackthenortheast.com) using React and Material UI',
                 'Built out animations (sliding, fading, spinning, enlarging) using GSAP.js',
@@ -125,7 +128,10 @@ export default function Experience() {
                         <h4>
                             {activeJob.title} @ {activeJob.company}
                         </h4>
-                        <p>{activeJob.time}</p>
+                        <div className={'active-job-extra'}>
+                            <p>{activeJob.time}</p>
+                            <p className={'active-job-location'}>{activeJob.location}</p>
+                        </div>
                     </div>
 
                     <div className={'active-job-description'}>

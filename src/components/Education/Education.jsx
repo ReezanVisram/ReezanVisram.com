@@ -10,8 +10,8 @@ export default function Education() {
             <div className={'education-content-container'}>
                 <div className={'school-container'}>
                     <h3 className={'school-name'}>University of Waterloo</h3>
-                    <h4 className={'degree'}>Bachelor of Applied Science - Honours Computer Engineering, Co-op</h4>
-                
+                    <h4 className={'degree'}>Candidate for Bachelor of Applied Science - Honours Computer Engineering, Co-op</h4>
+                    <h5>Sept. 2021 - Apr. 2026</h5>
                     <div className={'education-entrance-award-container'}>
                         <h4 className={'awards-header'}>Awards</h4>
                         <ul className={'awards-list'}>

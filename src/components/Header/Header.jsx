@@ -37,6 +37,9 @@ export default function Header() {
                     <a className={'anchor-link'} href='https://github.com/reezanvisram' target="_blank" rel="noreferrer"><p>Github</p></a>
                 </li>
                 <li>
+                    <a className={'anchor-link'} href='https://linkedin.com/in/reezan-visram' target="_blank" rel="noreferrer"><p>LinkedIn</p></a>
+                </li>
+                <li>
                     <a className={'anchor-link resume'} href={Resume} target='_blank' rel='noreferrer'>Resume</a>
                 </li>
             </ul>

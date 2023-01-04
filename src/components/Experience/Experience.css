@@ -72,14 +72,14 @@
     font-size: 1.5rem;
 }
 
-.active-job-heading p {
-    color: #aaaaaa;
-    font-size: 1.25rem;
-}
-
 .active-job-description {
     text-align: left;
     font-size: 1.1rem;
+}
+
+.active-job-extra {
+    color: #aaaaaa;
+    font-size: 1.25rem;
 }
 
 h5 {

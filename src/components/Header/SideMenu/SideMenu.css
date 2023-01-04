@@ -27,7 +27,7 @@
     color: #03DAC6;
 }
 
-@media (min-width: 721px) {
+@media (min-width: 1024px) {
     .side-menu-container {
         display: none;
     }
