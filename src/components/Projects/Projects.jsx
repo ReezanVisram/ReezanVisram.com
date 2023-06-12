@@ -101,7 +101,7 @@ export default function Projects() {
             summary:
                 'A self-improvement website where users can trask tasks and habits that they want to build',
             githubLink: 'https://github.com/reezanvisram/improvemint',
-            releaseLink: 'http://www.reezanvisram.com/improvemint',
+            releaseLink: 'https://improvemint.reezanvisram.com',
         },
         {
             name: 'PillsOnWheels',
@@ -112,16 +112,6 @@ export default function Projects() {
             githubLink: 'https://github.com/reezanvisram/PillsOnWheels',
             releaseLink:
                 'https://play.google.com/store/apps/details?id=com.Visram_INC.PillsOnWheels',
-        },
-        {
-            name: 'Complete Crisis Coverage',
-            type: 'web',
-            technologies: ['HTML', 'Bootstrap', 'Flask', 'MySQL'],
-            summary:
-                'A website where users can see COVID-19 Statistics from all over the world, as well as read firsthand stories of how COVID-19 has affected people globally',
-            githubLink:
-                'https://github.com/reezanvisram/completecrisiscoverage',
-            releaseLink: 'http://www.reezanvisram.com/completecrisiscoverage',
         },
         {
             name: 'Arduino Information Display',

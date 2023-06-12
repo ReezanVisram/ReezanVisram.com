@@ -50,9 +50,6 @@ export default function FeaturedProject({ project }) {
                 </div>
                 
             </div>
-            
-
-
         </div>
     )
 }
