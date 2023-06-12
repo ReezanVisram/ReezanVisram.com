@@ -2,7 +2,6 @@ import React from 'react';
 import './FeaturedProject.css';
 
 import GitHubIcon from '@material-ui/icons/GitHub'
-import GetAppIcon from '@material-ui/icons/GetApp';
 import LaunchIcon from '@material-ui/icons/Launch';
 
 export default function FeaturedProject({ project }) {
@@ -22,7 +21,7 @@ export default function FeaturedProject({ project }) {
                 }
 
                 {project.type === 'download' &&
-                    <a className={'featured-project-image-link'} href={project.releaseLink} download><img className={'featured-project-img'} src={project.img} alt={project.name} /></a>
+                    <a className={'featured-project-image-link'} href={project.releaseLink} target="_blank" rel="noreferrer"><img className={'featured-project-img'} src={project.img} alt={project.name} /></a>
                 }
 
                 {project.type === 'web' && 
@@ -40,7 +39,7 @@ export default function FeaturedProject({ project }) {
                         <a href={project.githubLink} target="_blank" rel="noreferrer"><GitHubIcon /></a>
 
                             {project.type === 'download' && 
-                                <a href={project.releaseLink} download><GetAppIcon className={'featured-project-release-icon'} /></a>
+                                <a href={project.releaseLink} target="_blank" rel="noreferrer"><LaunchIcon className={'featured-project-release-icon'} /></a>
                             }
 
                             {project.type === 'web' && 

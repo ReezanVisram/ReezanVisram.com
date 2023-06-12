@@ -23,7 +23,7 @@ export default function Projects() {
             ],
             summary: 'A human-vs-human 3D chess game, intended to simulate playing over-the-board chess',
             githubLink: 'https://github.com/reezanvisram/chess',
-            releaseLink: process.env.PUBLIC_URL + './Chess.zip'
+            releaseLink: 'https://github.com/ReezanVisram/Chess/releases/tag/v1.0.0',
         },
         {
             name: 'TypeR',
@@ -48,7 +48,7 @@ export default function Projects() {
             summary:
                 'A C++ and OpenGL program to render customizable and interactive fractals, such as the Mandelbrot Set and Heighway Dragon.',
             githubLink: 'https://github.com/reezanvisram/fractalvisualizer',
-            releaseLink: process.env.PUBLIC_URL + '/FractalVisualizer.zip',
+            releaseLink: 'https://github.com/ReezanVisram/FratcalVisualizer/releases/tag/v1.0.0',
         },
         {
             name: 'Morse Code Teaching Device',
@@ -74,7 +74,7 @@ export default function Projects() {
             summary:
                 'A desktop application that takes the stats of every NHL Player and uses them to create a realistic simulation of an NHL season',
             githubLink: 'https://github.com/reezanvisram/NHLSimulation',
-            releaseLink: process.env.PUBLIC_URL + '/NHLSimulation.zip',
+            releaseLink: 'https://github.com/ReezanVisram/NHLSimulation/releases/tag/v1.0.0',
         },
     ];
 
@@ -86,7 +86,7 @@ export default function Projects() {
             summary:
                 'A tycoon game where a user takes control of a pharmaceutical company racing to develop a vaccine for COVID-19',
             githubLink: 'https://github.com/reezanvisram/pharmaceutica',
-            releaseLink: process.env.PUBLIC_URL + '/Pharmaceutica.zip',
+            releaseLink: 'https://github.com/ReezanVisram/Pharmaceutica/releases/tag/v1.0.0',
         },
         {
             name: 'ImproveMint',
