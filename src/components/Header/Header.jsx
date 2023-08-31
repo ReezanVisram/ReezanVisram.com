@@ -1,24 +1,43 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
 import SideMenu from './SideMenu/SideMenu';
 import './Header.css';
+import { useWindowSize } from '../../lib/hooks';
 
 
 import Resume from '../Resume.pdf';
 
 export default function Header() {
-    const [activeClasses, setActiveClasses] = React.useState('inactive')
+    const [isSideMenuExpanded, setIsSideMenuExpanded] = useState(false);
+    // eslint-disable-next-line
+    const [width, height] = useWindowSize();
 
-
-    const changeActiveState = () => {
-        if (activeClasses === 'active') {
-            setActiveClasses('inactive');
-        } else {
-            setActiveClasses('active');
-        }
+    const handleSideMenuExpanded = () => {
+        setIsSideMenuExpanded(!isSideMenuExpanded);
     }
+
+    useEffect(() => {
+        if (width >= 1024) {
+            setIsSideMenuExpanded(false);
+        }
+    }, [width])
+
+    useEffect(() => {
+        if (isSideMenuExpanded) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'unset';
+        }
+    }, [isSideMenuExpanded])
+    let navbarIcon;
+    if (!isSideMenuExpanded) {
+        navbarIcon = <MenuIcon fontSize={'large'} />
+    } else {
+        navbarIcon = <CloseIcon fontSize={'large'} />
+    }
+
 
     return (
         <div className={'header-container'}>
@@ -43,19 +62,12 @@ export default function Header() {
                     <a className={'anchor-link resume'} href={Resume} target='_blank' rel='noreferrer'>Resume</a>
                 </li>
             </ul>
-            <div className={'menu-icon'} onClick={() => changeActiveState()}>
-                {activeClasses === 'inactive' &&
-                    <MenuIcon fontSize={'large'} />
-                }
-
-                {activeClasses === 'active' &&
-                    <CloseIcon fontSize={'large'} />
-                }
-                
+            <div className={'menu-icon'} onClick={handleSideMenuExpanded}>
+                {navbarIcon}
             </div>
 
-
-            <SideMenu classes={activeClasses} />
+            <SideMenu show={isSideMenuExpanded} onClick={handleSideMenuExpanded} />
+            
 
         </div>
     )

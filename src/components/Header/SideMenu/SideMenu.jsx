@@ -1,37 +1,42 @@
-import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import './SideMenu.css';
 
 import Resume from '../../Resume.pdf';
+import { useEffect, useState } from 'react';
 
-export default function SideMenu({ classes }) {
+export default function SideMenu({ show, onClick }) {
+    const [render, setRender] = useState(false);
 
-    let menuClasses = 'side-menu-container';
+    useEffect(() => {
+        if (show) {
+            setTimeout(() => {
+                setRender(true)
+            }, 100)
+        } else {
+            setRender(false)
+        }
 
-    if (classes === 'active') {
-        menuClasses = 'side-menu-container active'
-    } else if (classes === 'inactive') {
-        menuClasses = 'side-menu-container inactive'
-    }
+    }, [show])
+
 
     return (
-        <div className={menuClasses}>
+        <div className={render ? 'side-menu-container active' : 'side-menu-container inactive'}>
              <ul className={'side-menu-link-container'}>
                 <li>
-                    <AnchorLink className={'anchor-link'} href='#education'><p>Education</p></AnchorLink>
+                    <AnchorLink className={'anchor-link'} href='#education' onClick={onClick}><p>Education</p></AnchorLink>
                 </li>
                 <li>
-                    <AnchorLink className={'anchor-link'} href='#experience'><p>Experience</p></AnchorLink>
+                    <AnchorLink className={'anchor-link'} href='#experience' onClick={onClick}><p>Experience</p></AnchorLink>
                 </li>
                 <li>
-                    <AnchorLink className={'anchor-link'} href='#projects'><p>Projects</p></AnchorLink>
+                    <AnchorLink className={'anchor-link'} href='#projects' onClick={onClick}><p>Projects</p></AnchorLink>
                 </li>
                 <li>
-                    <a className={'anchor-link'} href='https://github.com/reezanvisram' target="_blank" rel="noreferrer"><p>Github</p></a>
+                    <a className={'anchor-link'} href='https://github.com/reezanvisram' target="_blank" rel="noreferrer" onClick={onClick}><p>Github</p></a>
                 </li>
                 <li>
-                    <a className={'anchor-link resume'} href={Resume} target='_blank' rel='noreferrer'>Resume</a>
+                    <a className={'anchor-link resume'} href={Resume} target='_blank' rel='noreferrer' onClick={onClick}>Resume</a>
                 </li>
             </ul>
         </div>
